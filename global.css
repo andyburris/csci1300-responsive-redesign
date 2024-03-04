@@ -1,10 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/bronze.css");
 
 /* Resets */
-*:not(span) {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+*:not(span) {
     font-family: 'Lora', serif;
 }
 body {
@@ -129,6 +131,7 @@ h3 {
         width: 3rem;
         height: 3rem;
         background-color: var(--bronze-4);
+        color: var(--bronze-11);
         border: none;
         display: flex;
         align-items: center;
@@ -136,6 +139,7 @@ h3 {
         border-top-right-radius: 0.75rem;
         border-bottom-right-radius: 0.75rem;
         transition: background-color 0.2s;
+        cursor: pointer;
 
         &:hover {
             background-color: var(--bronze-5);
@@ -230,6 +234,67 @@ h3 {
     & > h3 {
         color: var(--bronze-11);
         & > span { color: var(--bronze-12); }
+    }
+
+    .book-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @media screen and (max-width: 720px){
+            align-items: flex-start;
+        }
+
+        & > img {
+            width: 2.5rem;
+            border-radius: 0.5rem;
+        }
+
+        & > .content {
+            flex-grow: 1;
+            flex-shrink: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            @media screen and (max-width: 720px){
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            & > .col {
+    
+                p ~ p {
+                    font-style: italic;
+                    color: var(--bronze-11);
+                }
+            }
+
+            .download-chip {
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                padding: 0.5rem;
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+                height: fit-content;
+                color: var(--bronze-11);
+                background-color: var(--bronze-3);
+                border-radius: 9999px;
+                cursor: pointer;
+
+                & > svg {
+                    margin-right: 0.25rem;
+                }
+            }
+        }
+
+        & > svg {
+            color: var(--bronze-11);
+            flex-shrink: 0;
+        }
     }
 }
 
