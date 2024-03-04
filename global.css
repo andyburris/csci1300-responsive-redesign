@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/bronze.css");
 
 /* Resets */
-* {
+*:not(span) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -224,4 +224,19 @@ h3 {
         flex-grow: 1;
         flex-shrink: 1;
     }
+}
+
+#results {
+    & > h3 {
+        color: var(--bronze-11);
+        & > span { color: var(--bronze-12); }
+    }
+}
+
+/* Search logic */
+#search-section:has(input:not(:placeholder-shown)) ~ #categories {
+    display: none;
+}
+#search-section:has(input:placeholder-shown) ~ #results {
+    display: none;
 }
