@@ -3,29 +3,36 @@
 <head>
     <link rel="stylesheet" href="global.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon/PGLogo.svg" type="image/svg+xml">
     <title>Project Gutenberg Redesign</title>
 </head>
 <body class="p-4">
     <div id="container" class="col gap-8">
-        <nav class="row wrap">
+        <nav class="row wrap items-center">
+            <!-- <div class="row items-center gap-2">
+                <div class="logo">
+                </div>
+                <h3>Project Gutenberg</h6>
+                <div class="p-1"></div>
+            </div> -->
+            <svg id="logo" width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.75 1.25H14.75C16.9591 1.25 18.75 3.04086 18.75 5.25V8.5C18.75 10.7091 16.9591 12.5 14.75 12.5H13.75V1.25Z" fill="currentColor"/>
+                <path d="M1.25 3.75C1.25 2.36929 2.36929 1.25 3.75 1.25C5.13071 1.25 6.25 2.36929 6.25 3.75V12.5H5.25C3.04086 12.5 1.25 10.7091 1.25 8.5V3.75Z" fill="currentColor"/>
+                <path d="M1.25 13.75H5.25C5.80228 13.75 6.25 14.1977 6.25 14.75V18.75H5.25C3.04086 18.75 1.25 16.9591 1.25 14.75V13.75Z" fill="currentColor"/>
+                <path d="M7.5 5.25C7.5 3.04086 9.29086 1.25 11.5 1.25H12.5V14.75C12.5 16.9591 10.7091 18.75 8.5 18.75H7.5V5.25Z" fill="currentColor"/>
+                </svg>     
+            <div class="p-1"></div>
             <a class="tab selected" href="index.html">Search</a>
             <a class="tab" href="about.html">About</a>
             <a class="tab" href="donate.html">Donate</a>
         </nav>
         <div class="col gap-4" id="search-section">
             <div class="col gap-1">
-                <div id="logo" class="row items-center justify-center rounded-2">
-                    <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.75 1.25H14.75C16.9591 1.25 18.75 3.04086 18.75 5.25V8.5C18.75 10.7091 16.9591 12.5 14.75 12.5H13.75V1.25Z" fill="currentColor"/>
-                        <path d="M1.25 3.75C1.25 2.36929 2.36929 1.25 3.75 1.25C5.13071 1.25 6.25 2.36929 6.25 3.75V12.5H5.25C3.04086 12.5 1.25 10.7091 1.25 8.5V3.75Z" fill="currentColor"/>
-                        <path d="M1.25 13.75H5.25C5.80228 13.75 6.25 14.1977 6.25 14.75V18.75H5.25C3.04086 18.75 1.25 16.9591 1.25 14.75V13.75Z" fill="currentColor"/>
-                        <path d="M7.5 5.25C7.5 3.04086 9.29086 1.25 11.5 1.25H12.5V14.75C12.5 16.9591 10.7091 18.75 8.5 18.75H7.5V5.25Z" fill="currentColor"/>
-                        </svg>                    
+                <div class="icon-container">
+                    <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="48" y="40" width="64" height="176" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M217.67,205.77l-46.81,10a8,8,0,0,1-9.5-6.21L128.18,51.8a8.07,8.07,0,0,1,6.15-9.57l46.81-10a8,8,0,0,1,9.5,6.21L223.82,196.2A8.07,8.07,0,0,1,217.67,205.77Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="48" y1="72" x2="112" y2="72" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="48" y1="184" x2="112" y2="184" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="133.16" y1="75.48" x2="195.61" y2="62.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="139.79" y1="107.04" x2="202.25" y2="93.62" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="156.39" y1="185.94" x2="218.84" y2="172.52" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                 </div>
-                <h1>Project Gutenberg</h1>
+                <h1>Library Search</h1>
             </div>
             <div class="col gap-3">
                 <div id="search-bar" class="">
