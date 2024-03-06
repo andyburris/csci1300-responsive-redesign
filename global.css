@@ -81,6 +81,9 @@ h3 {
 .gap-4 {
     gap: 1rem;
 }
+.gap-6 {
+    gap: 1.5rem;
+}
 .gap-8 {
     gap: 2rem;
 }
@@ -96,6 +99,7 @@ h3 {
 #container {
     max-width: 720px;
     margin: auto;
+    padding-top: 2rem;
 }
 .tab {
     padding: 0.5rem 0.75rem;
@@ -114,10 +118,22 @@ h3 {
 }
 
 #logo {
+    color: var(--bronze-11);
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+        color: var(--bronze-12);
+    }
+}
+.icon-container {
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--bronze-3);
     color: var(--bronze-10);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #search-bar {
