@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/bronze.css");
-
+@font-face {
+    font-family: 'Libre Caslon Condensed';
+    src: url('assets/fonts/LibreCaslonCondensed.ttf') format('truetype-variable');
+}
 /* Resets */
 *{
     margin: 0;
